@@ -15,9 +15,11 @@ const eqArrays = function(arr1, arr2) {
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log("The two arrays match!");
+    console.log(`array 1:${arr1} array2:${arr2} The two arrays match!`);
   } else {
-    console.log("The two arrays do not match!!");
+    console.log(`array 1:${arr1} array2:${arr2} The two arrays do not match!!`);
   }
 };
 
+assertArraysEqual([1,2,3,4],[1,2,3,4]);
+assertArraysEqual([1,2,5,4],[1,2,3,4]);
