@@ -12,7 +12,10 @@ assertEqual(args[2] , args[3]);
 
 const eqArrays = function(arr1, arr2) {
   let check = false;
-  if (arr1.length !== arr2.length){
+  if ((arr1.length || arr2.length) < 1) {
+    return true;
+  }
+  if (arr1.length !== arr2.length) {
     return false;
   }
   for (let i = 0; i < arr1.length; i++) {
@@ -23,7 +26,7 @@ const eqArrays = function(arr1, arr2) {
     }
   }
   return check;
-}
+};
 
 assertEqual(eqArrays([1, 2, 3], [2, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);

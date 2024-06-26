@@ -1,5 +1,4 @@
 const eqArrays = function(arr1, arr2) {
-  console.log(arr1, arr2)
   let check = false;
   if ((arr1.length || arr2.length) < 1) {
     return true;
