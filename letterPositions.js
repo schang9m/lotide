@@ -1,4 +1,4 @@
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
   for (let i = 0; i < sentence.length; i++) {
@@ -35,4 +35,4 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-console.log(letterPositions("lighthouse in the house"))
+console.log(letterPositions("lighthouse in the house"));
