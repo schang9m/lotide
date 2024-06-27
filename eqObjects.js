@@ -14,7 +14,9 @@ const eqObjects = function(object1, object2) {
   if (obj1.length === obj2.length) {
     for (let val of obj1) {
       if (Array.isArray(object1[val])) {
-        eqArrays(object1[val], object2[val]);
+        if (!eqArrays(object1[val], object2[val])) {
+          return false;
+        }
       } else if (object1[val] !== object2[val]) {
         return false;
       }
