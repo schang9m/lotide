@@ -48,4 +48,4 @@ const assertObjectsEqual = function (actual, expected) {
 
 assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1' })
 
-assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1', c: 4})
+assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1', c: 3})
