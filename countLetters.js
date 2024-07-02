@@ -1,12 +1,4 @@
 // FUNCTION IMPLEMENTATION
-const args = process.argv;
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`❤️️❤️️❤️️ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🖤🖤🖤Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 const countLetters = function(str) {
   //make a new object
   let letterCount = {}; 
@@ -17,4 +9,4 @@ const countLetters = function(str) {
   }
   return letterCount;
 };
-console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;
